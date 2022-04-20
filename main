@@ -6,6 +6,14 @@ main() {
   // player.playerName = 'John';
   // player.average = 20;
   // player.team = 03;
+
   player.getData('john', 20, 03);
   player.showData();
+
+  print("");
+
+  player.ChangeData('Manahil', 30, 04);
+  player.showData();
+
+  print("");
 }
