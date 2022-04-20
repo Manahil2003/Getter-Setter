@@ -2,18 +2,11 @@ import 'person.dart';
 import 'dart:io';
 
 main() {
-  Player player = Player();
-  // player.playerName = 'John';
-  // player.average = 20;
-  // player.team = 03;
-
-  player.getData('john', 20, 03);
-  player.showData();
+  Player player1 = Player('John', 20, 'A');
+  player1.showData();
 
   print("");
 
-  player.ChangeData('Manahil', 30, 04);
-  player.showData();
-
-  print("");
+  player1.change('Manahil', 30, 'B');
+  player1.showData();
 }
