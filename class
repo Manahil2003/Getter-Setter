@@ -61,12 +61,15 @@ class Player {
     return _team;
   }
 
+  ChangeData(String playerName, average, team) {
+    this._playerName = playerName;
+    this._average = average;
+    this._team = team;
+  }
+
   void showData() {
     print("PlayerName : $_playerName");
-    print("");
     print("Average : $_average");
-    print("");
     print("Team : $_team");
-    print("");
   }
 }
