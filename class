@@ -25,50 +25,44 @@ import 'dart:io';
 //   }
 
 class Player {
-  late String _playerName;
-  late int _average;
-  late int _team;
+  String _name;
+  int _average;
+  String _team;
 
-  Player({playerName, average, team});
+  Player(this._name, this._average, this._team);
 
-  getData(String playerName, average, team) {
-    this._playerName = playerName;
-    this._average = average;
-    this._team = team;
+  void set name(String _name) {
+    this._name = _name;
   }
 
-  void set player_name(String nm) {
-    this._playerName = _playerName;
+  String get name {
+    return _name;
   }
 
-  String get player_name {
-    return _playerName;
-  }
-
-  void set player_average(String aver) {
+  void set average(int _average) {
     this._average = _average;
   }
 
-  int get aver {
+  int get average {
     return _average;
   }
 
-  void set player_team(String tm) {
+  void set team(String _team) {
     this._team = _team;
   }
 
-  int get tm {
+  String get team {
     return _team;
   }
 
-  ChangeData(String playerName, average, team) {
-    this._playerName = playerName;
+  void change(String _name, double _average, String _team) {
+    this._name = _name;
     this._average = average;
-    this._team = team;
+    this._team = _team;
   }
 
   void showData() {
-    print("PlayerName : $_playerName");
+    print("PlayerName : $_name");
     print("Average : $_average");
     print("Team : $_team");
   }
